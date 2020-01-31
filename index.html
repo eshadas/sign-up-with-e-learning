@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+        <div class="sign">
+            <h1>SIGN UP WITH e-LEARNING</h1>
+            <form onsubmit="myFun()">
+                <div class="container">
+                    USERNAME : <input type="text" placeholder="enter your name" id="user_name" value="" autocomplete="off">
+                    <span id="username"></span><br></br>
+                    GENDER <input type="radio" name="GENDER">male
+                    <input type="radio" name="GENDER">female
+                    <input type="radio" name="GENDER">others<br></br>
+                    PHONE NO : <input type="text" placeholder="phone no" id="phone" value="" autocomplete="off">
+                    <span id="phn"></span><br></br>
+                    EMAIL : <input type="text" placeholder="enter your email id" id="email" value="" autocomplete="off">
+                    <span id="em"></span><br></br>
+                    PASSWORD : <input type="password" placeholder="password" id="password" value="" autocomplete="off">
+                    <span id="pass"></span><br></br>
+                    CONFIRM PASSWORD : <input type="password" placeholder="confirm password" id="con_password" value="" autocomplete="off">
+                    <span id="cpass"></span><br></br>
+                    <p><span><input type="checkbox"></span>I accept terms and conditions</p>
+                    <p><span><input type="checkbox"></span>I don't accept terms and conditions</p><br>
+                    <div class="button">
+                        <button type="submit" value="submit">SUBMIT</button>
+                    </div>
+                </div>
+            </form>
+            <div class="btn-wrapper">
+                <p>or</p>
+                <a href="#" class="btn facebook" onclick="runCode()"><span class="fa fa-facebook"></span>Sign up with Facebook</a>
+                <a href="#" class="btn twitter" onclick="runFast()"><span class="fa fa-twitter"></span>Sign up with Twitter</a>
+            </div>
+        </div>
+        <p>A BOOK IS A GIFT YOU CAN OPEN AGAIN AND AGAIN</p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

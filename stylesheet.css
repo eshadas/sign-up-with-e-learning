@@ -1,0 +1,75 @@
+body, html {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.bg-image {
+  background-image: url("https://besthqwallpapers.com/Uploads/14-2-2019/80507/thumb2-ecology-concept-4k-save-earth-nature-book-eco.jpg");
+  filter: blur(3px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-text {
+  background-color: rgba(0,0,0, 0.4); /* Black opacity see-through */
+  color: whitesmoke;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+button {
+    background-color: forestgreen;
+    height: 35px;
+    border: 1px solid black;
+    font-size: 25px;
+    color: black;
+    width: 25%;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: olive;
+}
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 1;
+  background-color: red;
+}
+.fa {
+  margin-right: 5px;
+}
+.btn-wrapper p {
+    font-size: 30px;
+}
+.container span {
+    color: rgb(241, 23, 23);
+}
+.sign h1 {
+  color: 	#ff9933;
+  text-decoration: underline;
+}
