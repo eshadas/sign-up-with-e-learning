@@ -89,4 +89,5 @@ function myFun() {
     else {
          document.getElementById("cpass").innerHTML = "";
     }
+    alert("sign up completed");
 }
