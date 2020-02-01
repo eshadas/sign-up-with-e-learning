@@ -17,8 +17,10 @@ function myFun() {
         document.getElementById("username").innerHTML = "**Please fill username";
         return false;
     }
-    else if (a.match(correct_way))
+    else if (a.match(correct_way)) {
+        document.getElementById("username").innerHTML = "";
         true;
+    }
     else {
         document.getElementById("username").innerHTML = "*only alphabets are allowed";
         return false;
@@ -36,6 +38,10 @@ function myFun() {
         document.getElementById("phn").innerHTML = "**Phone number must be 10 digits only";
         return false;
     }
+    else {
+        document.getElementById("phn").innerHTML = "";
+        true;
+    }
     //Invalid email id
     if (email === "") {
         document.getElementById("em").innerHTML = "**Please fill email";
@@ -49,6 +55,10 @@ function myFun() {
         document.getElementById("em").innerHTML = "**Invalid email";
         return false;
     }
+    else {
+        document.getElementById("em").innerHTML = "";
+        true;
+    }
     //Invalid password
     if (password === "") {
         document.getElementById("pass").innerHTML = "**Please fill password";
@@ -58,14 +68,25 @@ function myFun() {
         document.getElementById("pass").innerHTML = "**password length must be between 6 to 20";
         return false;
     }
+    else {
+        document.getElementById("pass").innerHTML = "";
+        true;
+    }
     //Confirm password
     if (con_password === "") {
         document.getElementById("cpass").innerHTML = "**Please fill confirm password";
         return false;
     }
+    else {
+        document.getElementById("cpass").innerHTML = "";
+        true;
+    }
     //password matching
     if (password != con_password) {
         document.getElementById("cpass").innerHTML = "**passwords are not matching";
         return false;
+    }
+    else {
+         document.getElementById("cpass").innerHTML = "";
     }
 }
